@@ -1,8 +1,8 @@
-<p align="center"><a href="https://www.facebook.com/AYAN.JANU.LOVE.YOU.MY.HEART" target="_blank" rel="noopener noreferrer">
+<p align="center"><a href="https://www.facebook.com/profile.php?id=100057678948022" target="_blank" rel="noopener noreferrer">
   <img src="https://i.imgur.com/oapEhQg.gif" width="50" style="margin-right: 10px;"></a>
 </p>
 <h5 align="center">
-🔹Mohammad Ayan
+🔹MR.SANNY2.BOT
 </h5>
 
 ## Introduction
@@ -12,7 +12,7 @@
 	<a href="https://nodejs.org/dist/v11.30.0">
 		<img src="https://img.shields.io/badge/Nodejs%20Support-17.ox-brightgreen.svg?style=flat-square" alt="Nodejs Support v17.ox">
 	</a>
-  <img alt="size" src="https://img.shields.io/github/repo-size/ayankhan/AYAN-BOT.svg?style=flat-square&label=size">
+  <img alt="size" src="https://img.shields.io/github/repo-size/ayankhan/SANNY-BOT.svg?style=flat-square&label=size">
   <img alt="code-version" src="https://img.shields.io/badge/dynamic/json?color=brightgreen&label=code%20version&prefix=v&query=%24.version&url=https://github.com/ntkhang03/Goat-Bot-V2/raw/main/package.json&style=flat-square">
   <img alt="visitors" src="https://visitor-badge.laobi.icu/badge?style=flat-square&page_id=ntkhang3.Goat-Bot-V2">
   <img alt="size" src="https://img.shields.io/badge/license-ATF-green?style=flat-square&color=brightgreen">
@@ -35,18 +35,18 @@
 
 <div align="center">
 			<h3>My Replit Account ->
-			<a href="https://replit.com/@CliffvincentTor" style="color: green;">@Ayanchoudhuri🔥</a>
+			<a href="https://replit.com/@CliffvincentTor" style="color: green;">@Mrsanny20ten🔥</a>
 				<br>
 	My Facebook Account ->
-	<a href="https://www.facebook.com/swordigo.swordslush?mibextid=rS40aB7S9Ucbxw6v" style="color: black;">Ayan🚀</a></h3></div>
+	<a href="https://www.facebook.com/swordigo.swordslush?mibextid=rS40aB7S9Ucbxw6v" style="color: black;">Sany🚀</a></h3></div>
 
-<img align="center" src="https://i.imgur.com/wovTalh.jpeg"/>
-
-
-🔹Mohammad Ayan
+<img align="center" src="https://i.imgur.com/E4vSKhT.jpeg"/>
 
 
-# Editing AYAN CHOWDHURY😘
+🔹MR.SANNY
+
+
+# Editing MR SANNY 😘
 
 # GOATBOTV3 real owner I don’t know
 
@@ -54,7 +54,7 @@
 
 # If there is any error, I will fix it by knocking on Facebook
 
-# https://www.facebook.com/AYAN.JANU.LOVE.YOU.MY.HEART
+# https://www.facebook.com/profile.php?id=100057678948022
 
 # I hope you enjoy
 
