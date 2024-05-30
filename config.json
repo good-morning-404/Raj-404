@@ -17,7 +17,7 @@
     "ignoreCommand": []
   },
   "adminBot": [
-    "61551774501334",
+    "100085082042087",
     "",
     ""
   ],
@@ -26,12 +26,12 @@
     "whiteListIds": [],
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
-  "authorName": "MR.AYAN",
+  "authorName": "RAJ",
   "AGE": "18",
   "GENDER": "MALE",
-  "nickNameBot": "♡︎𝗠𝗜𝗥𝗔 𝗞𝗜𝗠 𝗥𝗢𝗕𝗢𝗧♡︎",
-  "authorFB": "https://m.me/NOOBS.DEVELOPER.AYAN",
-  "prefix": ".",
+  "nickNameBot": "😘________/ 𝐑𝐀𝐉",
+  "authorFB": "https://www.facebook.com/profile.php?id=100085082042087",
+  "prefix": "!",
   "database": {
     "type": "sqlite",
     "uriMongodb": "",
