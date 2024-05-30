@@ -53,7 +53,7 @@ module.exports = {
               return message.reply('[ERR] The file could not be sent because it is larger than 83mb.');
             }
             const replyMessage = {
-              body: `✅Title: ${video.title}\nArtist: ${video.author.name}`,
+              body: `🎬Title: ${video.title}\nArtist: ${video.author.name}`,
               attachment: fs.createReadStream(filePath),
             };
             await api.unsendMessage(originalMessage.messageID);
@@ -105,7 +105,7 @@ module.exports = {
             return message.reply('[ERR] The file could not be sent because it is larger than 25MB.');
           }
           const replyMessage = {
-            body: `✅Title: ${video.title}\nArtist: ${video.author.name}`,
+            body: `🎬Title: ${video.title}\nArtist: ${video.author.name}`,
             attachment: fs.createReadStream(filePath),
           };
           await api.unsendMessage(originalMessage.messageID);
