@@ -1,6 +1,6 @@
 module.exports = {
   config: {
-    name: "youtube",
+    name: "yt",
     version: "1.0",
     role: 0,
     author: "MR.AYAN",
@@ -37,7 +37,7 @@ module.exports = {
     const videoName = data.join(" ");
 
     try {
-      api.sendMessage(`☕ | Searching video for "${videoName}".\n🕰 | Please wait...`, event.threadID);
+      api.sendMessage(`🎬 | Searching video for "${videoName}".\n🔁 | Please wait...`, event.threadID);
 
       const searchResults = await yts(videoName);
       if (!searchResults.videos.length) {
@@ -71,7 +71,7 @@ module.exports = {
         }
 
         const message = {
-          body: `☕ | Title: ${video.title}\n🕰 | Duration: ${video.duration.timestamp}`,
+          body: `🎬 | Title: ${video.title}\n🔁 | Duration: ${video.duration.timestamp}`,
           attachment: fs.createReadStream(filePath)
         };
 
