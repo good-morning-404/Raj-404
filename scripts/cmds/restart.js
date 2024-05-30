@@ -2,7 +2,7 @@ const fs = require("fs-extra");
 
 module.exports = {
 	config: {
-		name: "restart",
+		name: "rest",
 		version: "1.0",
 		author: "MR.AYAN",
 		countDown: 5,
@@ -27,7 +27,7 @@ module.exports = {
 			restartting: "🔄 | Đang khởi động lại bot..."
 		},
 		en: {
-			restartting: "🚀 | 𝐑𝐞𝐬𝐭𝐚𝐫𝐭𝐢𝐧𝐠 𝐛𝐨𝐭 𝐩𝐥𝐞𝐚𝐬𝐞 𝐰𝐚𝐢𝐭..."
+			restartting: "🔁 | 𝐎𝐤 𝐛𝐨𝐬𝐬 𝐩𝐥𝐞𝐚𝐬𝐞 𝐰𝐚𝐢𝐭..."
 		}
 	},
 
