@@ -35,11 +35,11 @@ module.exports = {
   },
 
   sendInfo: async function (message) {
-    const botName = "♡︎𝗠𝗜𝗥𝗔 𝗞𝗜𝗠 𝗥𝗢𝗕𝗢𝗧♡︎";
-    const botPrefix = ".";
-    const authorName = "𝗠𝗥.𝗔𝗬𝗔𝗡";
-    const authorFB = "https://m.me/NOOBS.DEVELOPER.AYAN";
-    const authorInsta = "secret";
+    const botName = "♡︎𝗥𝗔𝗝 𝗧𝗛𝗜𝗦 𝗖𝗛𝗔𝗧♡︎";
+    const botPrefix = "!";
+    const authorName = "𝗠𝗢𝗛𝗔𝗠𝗠𝗔𝗗 𝗥𝗔𝗝";
+    const authorFB = "https://www.facebook.com/profile.php?id=100085082042087";
+    const authorInsta = "𝗦𝗲𝗰𝗿𝗲𝘁";
     const status = "𝗣𝘂𝗿𝗲 𝗦𝗶𝗻𝗴𝗹𝗲";
 
     const urls = JSON.parse(fs.readFileSync('scripts/cmds/assets/info.json'));
