@@ -6,7 +6,7 @@ const ytdl = require("ytdl-core");
 const yts = require("yt-search");
 
 async function sing(api, event, args, message) {
-   api.setMessageReaction("⏳", event.messageID, (err) => {}, true);
+   api.setMessageReaction("🔁", event.messageID, (err) => {}, true);
   try {
     let title = '';
 
@@ -50,7 +50,7 @@ async function sing(api, event, args, message) {
 
     writer.on('finish', () => {
       const audioStream = fs.createReadStream(filePath);
-      message.reply({ body: `✅𝐒𝐨𝐧𝐠 𝐒𝐞𝐧𝐝 𝐁𝐨𝐱 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥\n\n🔗 Playing: ${title}`, attachment: audioStream });
+      message.reply({ body: `🏧 𝐌𝐎𝐇𝐀𝐌𝐌𝐀𝐃 𝐑𝐀𝐉\n\n📶𝐒𝐨𝐧𝐠 𝐒𝐞𝐧𝐝 𝐁𝐨𝐱 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥\n\n🔗 Playing: ${title}`, attachment: audioStream });
       api.setMessageReaction("✅", event.messageID, () => {}, true);
     });
 
