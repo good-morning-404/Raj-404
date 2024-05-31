@@ -15,6 +15,6 @@ onChat: async function({
     message,
     getLang
 }) {
-    if (event.body && event.body.toLowerCase() == "hmm") return message.reply("এতো আমার বস কে ডাকো কেন হে-!!😒");
+    if (event.body && event.body.toLowerCase() == "raj") return message.reply("এতো আমার বস কে ডাকো কেন হে-!!😒");
 }
 }; 
