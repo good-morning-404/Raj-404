@@ -3,14 +3,14 @@ const axios = require("axios");
 const path = require("path");
 const { getPrefix } = global.utils;
 const { commands, aliases } = global.GoatBot;
-const doNotDelete = "[ ㋛︎ | 𝐑𝐀𝐉 𝐑𝐎𝐁𝐎𝐓 ]"; // changing this wont change the goatbot V2 of list cmd it is just a decoyy
+const doNotDelete = "[ 𝗠𝗢𝗛𝗔𝗠𝗠𝗔𝗗 𝗥𝗔𝗝 ]"; // changing this wont change the goatbot V2 of list cmd it is just a decoyy
 
 module.exports = {
   config: {
     name: "help2",
     version: "1.17",
-    author: "𝐌𝐑.𝐀𝐘𝐀𝐍", // original author MR.AYAN
-    countDown: 10,
+    author: "𝗠𝗥.𝗔𝗬𝗔𝗡", // original author 𝗠𝗥.𝗔𝗬𝗔𝗡
+    countDown: 5,
     role: 0,
     shortDescription: {
       en: "View command usage and list all commands directly",
@@ -34,7 +34,7 @@ module.exports = {
       const categories = {};
       let msg = "";
 
-      msg += `╔═════════════╗\n       ♡︎𝘾𝙈𝘿 𝙇𝙄𝙎𝙏♡︎\n╚═════════════╝`; // replace with your name 
+      msg += ``; // replace with your name 
 
       for (const [name, value] of commands) {
         if (value.config.role > 1 && role < value.config.role) continue;
@@ -46,24 +46,28 @@ module.exports = {
 
       Object.keys(categories).forEach((category) => {
         if (category !== "info") {
-          msg += `\n╭────────────────♡︎\n│ 『  ${category.toUpperCase()}  』`;
+          msg += `\n╭─────⭓『  ${category.toUpperCase()}  』`;
+
 
           const names = categories[category].commands.sort();
           for (let i = 0; i < names.length; i += 3) {
-            const cmds = names.slice(i, i + 3).map((item) => `⌾${item}`);
-            msg += `\n│ ${cmds.join(" ".repeat(Math.max(1, 10 - cmds.join("").length)))}`;
+            const cmds = names.slice(i, i + 2).map((item) => `⭔${item}`);
+            msg += `\n│${cmds.join(" ".repeat(Math.max(1, 5 - cmds.join("").length)))}`;
           }
 
-          msg += `\n╰───────────ꔪ`;
+          msg += `\n╰────────────⭓`;
         }
       });
 
       const totalCommands = commands.size;
-      msg += `\n𝗖𝘂𝗿𝗿𝗲𝗻𝘁𝗹𝘆, 𝘁𝗵𝗲 𝗯𝗼𝘁 𝗵𝗮𝘀 [${totalCommands}] 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝘁𝗵𝗮𝘁 𝗰𝗮𝗻 𝗯𝗲 𝘂𝘀𝗲𝗱\n`;
-      msg += `𝗧𝘆𝗽𝗲 ${prefix}𝗵𝗲𝗹𝗽 𝗰𝗺𝗱𝗡𝗮𝗺𝗲 𝘁𝗼 𝘃𝗶𝗲𝘄 𝘁𝗵𝗲 𝗱𝗲𝘁𝗮𝗶𝗹𝘀 𝗼𝗳 𝘁𝗵𝗮𝘁 𝗰𝗼𝗺𝗺𝗮𝗻𝗱.\n`;
-      msg += `㋛︎ | 𝐑𝐀𝐉 𝐑𝐎𝐁𝐎𝐓`; // its not decoy so change it if you want 
+      msg += `\n\n╭─────⭓[ 𝗘𝗻𝗷𝗼𝘆 ]\n│> 𝗧𝗼𝘁𝗮𝗹 𝗰𝗺𝗱𝘀: [${totalCommands}].\n│𝗧𝘆𝗽𝗲: [ ${prefix}𝗵𝗲𝗹𝗽 𝘁𝗼 \n│<𝗰𝗺𝗱> 𝘁𝗼 𝗹𝗲𝗮𝗿𝗻 𝘁𝗵𝗲 𝘂𝘀𝗮𝗴𝗲.]\n╰────────────⭓`;
+      msg += ``;
+      msg += `\n╭─────⭓\n│🌟 | [ 𝗠𝗢𝗛𝗔𝗠𝗠𝗔𝗗 𝗥𝗔𝗝 ]\n│https://www.facebook.com/profile.php?id=100085082042087\n╰────────────⭓`; // its not decoy so change it if you want 
 
-      await message.reply(msg);
+
+      await message.reply({
+        body: msg,
+      });
     } else {
       const commandName = args[0].toLowerCase();
       const command = commands.get(commandName) || commands.get(aliases.get(commandName));
@@ -80,24 +84,16 @@ module.exports = {
         const guideBody = configCommand.guide?.en || "No guide available.";
         const usage = guideBody.replace(/{p}/g, prefix).replace(/{n}/g, configCommand.name);
 
-        const response = `━━━━━━━━━━━━━━━━━♡
-   
-   ➢  ♡𝐍𝐀𝐌𝐄♡ 
-    ➠${configCommand.name}
-   ➢ 𝙄𝙉𝙁𝙊
-    
-     ➠𝗗𝗲𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻 : ${longDescription}
-     ➠𝗼𝘁𝗵𝗲𝗿 𝗻𝗮𝗺𝗲𝘀 : ${configCommand.aliases ? configCommand.aliases.join(", ") : "Do not have"}
-    Other names in your group:  Do not have
-     ➠𝗔𝘂𝘁𝗵𝗼𝗿: ${author}
-     ➠𝗩𝗲𝗿𝘀𝗶𝗼𝗻 : ${configCommand.version || "1.0"}
-     ➠𝗥𝗼𝗹𝗲 : ${roleText}
-     ➠𝗧𝗶𝗺𝗲 𝗽𝗲𝗿 𝗰𝗼𝗺𝗺𝗮𝗱: ${configCommand.countDown || 1}s
-   ➢ 𝙐𝙎𝘼𝙂𝙀
-     ➠ ${usage}
-   ➢ 𝙉𝙊𝙏𝙀𝙎
-    scripts coding by MOHAMMAD RAJ
-  ━━━━━━━━━━━━━━━━━━ꔪ`;
+        const response = `╭── NAME ────⭓
+  │ ${configCommand.name}
+  ├── INFO
+  │ Version: ${configCommand.version || "1.0"}
+  │ Role: ${roleText}
+  │ Time per command: ${configCommand.countDown || 1}s
+  │ Author: ${author}
+  ├── Usage
+  │ ${usage}
+  ╰──────⭓`;
 
         await message.reply(response);
       }
