@@ -16,15 +16,15 @@ config: {
   onStart: async function ({ api, event }) {
   try {
     const ownerInfo = {
-      name: '𝐌𝐎𝐇𝐀𝐌𝐌𝐀𝐃 𝐑𝐀𝐉',
-      gender: '𝐌𝐚𝐥𝐞',
+      name: '𝙼𝙾𝙷𝙰𝙼𝙼𝙰𝙳 𝚁𝙰𝙹',
+      gender: '𝙼𝙰𝙻𝙴',
       age: '18+',
-      height: '𝐈𝐧𝐛𝐨𝐱',
+      height: '𝙸𝙽𝙱𝙾𝚇',
       facebookLink: 'https://www.facebook.com/profile.php?id=100085082042087',
-      nick: '𝐑𝐀𝐉'
+      nick: '𝙼𝙾𝙷𝙰𝙼𝙼𝙰𝙳 𝚁𝙰𝙹'
     };
 
-    const bold = 'https://i.postimg.cc/RFRgMSj6/3b9076596c01e30ca688169aa3879e49.gif '; // Replace with your Google Drive videoid link https://drive.google.com/uc?export=download&id=here put your video id
+    const bold = 'https://i.imgur.com/uVZFG7y.jpeg'; // Replace with your Google Drive videoid link https://drive.google.com/uc?export=download&id=here put your video id
 
     const tmpFolderPath = path.join(__dirname, 'tmp');
 
@@ -38,13 +38,13 @@ config: {
     fs.writeFileSync(videoPath, Buffer.from(videoResponse.data, 'binary'));
 
     const response = `
-Owner Information:🧾
-Name: ${ownerInfo.name}
-Gender: ${ownerInfo.gender}
-Age: ${ownerInfo.age}
-Height: ${ownerInfo.height}
-Facebook: ${ownerInfo.facebookLink}
-Nick: ${ownerInfo.nick}
+𝙰𝙳𝙼𝙸𝙽 𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝚃𝙸𝙾𝙽:🧾
+𝙽𝙰𝙼𝙴: ${ownerInfo.name}
+𝙶𝙴𝙽𝙳𝙴𝚁: ${ownerInfo.gender}
+𝙰𝙶𝙴: ${ownerInfo.age}
+𝙷𝙴𝙸𝙶𝙴: ${ownerInfo.height}
+𝙵𝙰𝙲𝙴𝙱𝙾𝙾𝚔: ${ownerInfo.facebookLink}
+𝙽𝙸𝙲𝙺: ${ownerInfo.nick}
 `;
 
 
