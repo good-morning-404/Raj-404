@@ -14,7 +14,7 @@ module.exports = {
       en: "Sends information about the bot and admin along with an image."
     },
     longDescription: {
-      vi: "",
+      vi: "https://i.imgur.com/uVZFG7y.jpeg",
       en: "Sends information about the bot and admin along with an image."
     },
     category: "Information",
